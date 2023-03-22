@@ -1,15 +1,17 @@
+server:
+  port: 8888
+
 spring:
   application:
     name: config-server
-
   cloud:
     config:
       server:
         git:
           uri: https://github.com/inurzamal/cloud-config-server
+          clone-on-start: true
 
-server:
-  port: 8888
+
 
 #eureka:
 #  client:
